@@ -42,22 +42,9 @@ Wrap up code fpr MYTH pipelined core
 
 
    // This code can be found in: https://github.com/stevehoover/RISC-V_MYTH_Workshop
-  // Made by Nacer Chalane
+  // executed by Nacer Chalane
 
 
-   // /====================\
-   // | Sum 1 to 9 Program |
-   // \====================/
-   //
-   // Program for MYTH Workshop to test RV32I
-   // Add 1,2,3,...,9 (in that order).
-   //
-   // Regs:
-   //  r10 (a0): In: 0, Out: final sum
-   //  r12 (a2): 10
-   //  r13 (a3): 1..10
-   //  r14 (a4): Sum
-   // 
    // External to function:
    m4_asm(ADD, r10, r0, r0)             // Initialize r10 (a0) to 0.
    // Function: 
