@@ -37,17 +37,13 @@ A register file is an array of processor registers in a central processing unit 
 
 ![5](https://user-images.githubusercontent.com/67355283/165024398-b1ee0117-b87a-42f2-85e5-89c93bcb8703.PNG)
 
+Wrap up code fpr MYTH pipelined core
 
-\m4_TLV_version 1d: tl-x.org
-\SV
+
+
    // This code can be found in: https://github.com/stevehoover/RISC-V_MYTH_Workshop
   // Made by Nacer Chalane
 
-   m4_include_lib(['https://raw.githubusercontent.com/stevehoover/RISC-V_MYTH_Workshop/c1719d5b338896577b79ee76c2f443ca2a76e14f/tlv_lib/risc-v_shell_lib.tlv'])
-
-\SV
-   m4_makerchip_module   // (Expanded in Nav-TLV pane.)
-\TLV
 
    // /====================\
    // | Sum 1 to 9 Program |
@@ -265,22 +261,6 @@ A register file is an array of processor registers in a central processing unit 
 
 
 
-   // Assert these to end simulation (before Makerchip cycle limit).
-   *passed = |cpu/xreg[15]>>5$value == (1+2+3+4+5+6+7+8+9);
-   *failed = 1'b0;
-
-   // Macro instantiations for:
-   //  o instruction memory
-   //  o register file
-   //  o data memory
-   //  o CPU visualization
-   |cpu
-      m4+imem(@1)    // Args: (read stage)
-      m4+rf(@2, @3)  // Args: (read stage, write stage) - if equal, no register bypass is required
-      m4+dmem(@4)    // Args: (read/write stage)
-
-   m4+cpu_viz(@4)    // For visualisation, argument should be at least equal to the last stage of CPU logic. @4 would work for all labs.
-\SV
-   endmodule
+  
 
 
