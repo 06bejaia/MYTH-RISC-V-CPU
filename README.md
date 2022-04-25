@@ -9,6 +9,8 @@ Fetch
 
 The basic operation of a computer is called the ‘fetch-execute’ cycle. The CPU is designed to understand a set of instructions - the instruction set. It fetches the instructions from the main memory and executes them. This is done repeatedly from when the computer is booted up to when it is shut down.
 
+![1](https://user-images.githubusercontent.com/67355283/165024096-cfbce379-92bc-453e-a46b-cb758725610f.PNG)
+
 
 Decode
 
