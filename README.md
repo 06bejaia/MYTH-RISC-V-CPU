@@ -16,6 +16,8 @@ Decode
 
 Decode stage The decoding process allows the CPU to determine what instruction is to be performed so that the CPU can tell how many operands it needs to fetch in order to perform the instruction. The opcode fetched from the memory is decoded for the next steps and moved to the appropriate registers.
 
+![2](https://user-images.githubusercontent.com/67355283/165024199-9611fcfd-9855-4723-96d3-9f6a1304e9cc.PNG)
+
 Register File
 
 A register file is a means of memory storage within a computer's central processing unit (CPU). The computer's register files contain bits of data and mapping locations. These locations specify certain addresses that are input components of a register file. Other inputs include data, a read and write function and execute function.
