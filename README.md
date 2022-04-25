@@ -26,7 +26,11 @@ A register file is a means of memory storage within a computer's central process
 
 Excute
 
-The control unit of the CPU passes the decoded information as a sequence of control signals to the relevant functional units of the CPU to perform the actions required by the instruction, such as reading values from registers, passing them to the ALU to perform mathematical or logic functions on them, ...
+The control unit of the CPU passes the decoded information as a sequence of control signals to the relevant functional units of the CPU to perform the actions required by the instruction, such as reading values from registers, passing them to the ALU to perform mathematical or logic functions on them
+
+
+![4](https://user-images.githubusercontent.com/67355283/165024341-8853a3df-b951-4ee0-accd-411a1432cc9f.PNG)
 
 Write register File
 A register file is an array of processor registers in a central processing unit (CPU). Register banking is the method of using a single name to access multiple different physical registers depending on the operating mode. Modern integrated circuit-based register files are usually implemented by way of fast static RAMs with multiple ports. Such RAMs are distinguished by having dedicated read and write ports, whereas ordinary multiported SRAMs will usually read and write through the same ports.
+
