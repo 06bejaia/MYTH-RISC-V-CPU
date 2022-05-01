@@ -5,8 +5,11 @@ Intoduction to RISC-V CPU architecture:
 ![Example_RISCV__Block_Diagram](https://user-images.githubusercontent.com/67355283/166131604-b10fe61a-f482-45f0-8288-068861b0b56f.jpg)
 
 
-RISC-V is an ISA, so it doesn't talk about how to implement the actual design. CPU designers take the ISA as their input and decide how to implement hardware (almost always) in RTL. In this day a single cycle design of the ISA will be implemented named MYTH. MYTH will become pipeline in the next day. Here is a schematic of the design
+RISC-V is an ISA, so it doesn't talk about how to implement the actual design. CPU designers take the ISA as their input and decide how to implement hardware (almost always) in RTL. In this day a single cycle design of the ISA will be implemented named MYTH.Here is a schematic of the design:
 
+![schematic](https://user-images.githubusercontent.com/67355283/166132510-521283b5-31b0-4d72-9a11-02ab82cff52d.PNG)
+
+Now , we will fellow te steps to code by fellowing the schematic!
 
 Fetch
 
