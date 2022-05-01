@@ -27,6 +27,9 @@ Register File
 A register file is a means of memory storage within a computer's central processing unit (CPU). The computer's register files contain bits of data and mapping locations. These locations specify certain addresses that are input components of a register file. Other inputs include data, a read and write function and execute function.
 
 
+![file-register](https://user-images.githubusercontent.com/67355283/166131758-b137a9c6-7265-47f6-9937-9d411e3b3433.PNG)
+
+
 
 Excute
 
