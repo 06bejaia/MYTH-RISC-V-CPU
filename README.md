@@ -50,6 +50,6 @@ A register file is an array of processor registers in a central processing unit 
 Wrap up code fpr MYTH pipelined core
 
 
+![ALU - Copy](https://user-images.githubusercontent.com/67355283/166132241-d3760af7-2da9-43f1-b75c-4e69a4fc061e.PNG)
 
-![ALU - Copy](https://user-images.githubusercontent.com/67355283/166132208-ccff91a4-13bd-424f-8c16-eda60563d705.PNG)
 
