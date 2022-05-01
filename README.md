@@ -36,7 +36,8 @@ Excute
 The control unit of the CPU passes the decoded information as a sequence of control signals to the relevant functional units of the CPU to perform the actions required by the instruction, such as reading values from registers, passing them to the ALU to perform mathematical or logic functions on them
 
 
-![EXUCETE](https://user-images.githubusercontent.com/67355283/166131799-3d9a979f-f72b-4f3c-b00e-d8c77e86639d.PNG)
+![ALU](https://user-images.githubusercontent.com/67355283/166132075-4caae9d3-b94b-4366-97eb-9ca7bc465170.PNG)
+
 
 
 Write register File
