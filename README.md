@@ -44,7 +44,8 @@ Write register File
 
 A register file is an array of processor registers in a central processing unit (CPU). Register banking is the method of using a single name to access multiple different physical registers depending on the operating mode. Modern integrated circuit-based register files are usually implemented by way of fast static RAMs with multiple ports. Such RAMs are distinguished by having dedicated read and write ports, whereas ordinary multiported SRAMs will usually read and write through the same ports.
 
-![5](https://user-images.githubusercontent.com/67355283/165024398-b1ee0117-b87a-42f2-85e5-89c93bcb8703.PNG)
+![ALU](https://user-images.githubusercontent.com/67355283/166132091-aeebbc07-e759-4222-a48f-770802e7dc06.PNG)
+
 
 Wrap up code fpr MYTH pipelined core
 
