@@ -1,3 +1,5 @@
+`ifndef SP_DEFAULT
+`define SP_DEFAULT
 /*
 Copyright (c) 2015, Steven F. Hoover
 
@@ -25,12 +27,39 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-`include "sp_verilog.vh"
+
+// File included by SandPiper-generated code for the default project configuration.
+`include "sandpiper.vh"
 
 
-// Clock gate module used by SandPiper default project.
+// Latch macros.  Inject 'x in simulation for clk === 'x.
 
-module clk_gate (output gated_clk, input free_clk, func_en, pwr_en, gating_override);
+// A-phase latch.
+`ifdef SP_PHYS
+`define TLV_LATCH(in, out, clk) \
+always @ (in, clk) begin        \
+  if (clk === 1'b1)             \
+    out <= in;                  \
+  else if (clk === 1'bx)        \
+    out <= 'x;                  \
+end
+`else
+`define TLV_LATCH(in, out, clk) always @ (in, clk) if (clk == 1'b1) out <= in;
+`endif  // SP_PHYS
 
-   assign gated_clk = free_clk;
-endmodule
+// B-phase latch.
+`ifdef SP_PHYS
+`define TLV_BLATCH(out, in, clk) \
+always @ (in, clk) begin         \
+  if (!clk === 1'b1)             \
+    out <= in;                   \
+  else if (!clk === 1'bx)        \
+    out <= 'x;                   \
+end
+`else
+`define TLV_BLATCH(out, in, clk) always @ (in, clk) if (!clk == 1'b1) out <= in;
+`endif  // SP_PHYS
+
+
+	   
+`endif  // SP_DEFAULT
